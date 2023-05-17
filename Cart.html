@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart - BlueLockStore</title>
+    <link rel="icon" type="image" href="img/438-4384790_computer-icon-transparent-background.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/438-4384790_computer-icon-transparent-background.png"  width="100px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="img/1074958-200.png" width="50px" height="50px"></a>
+            <img src="img/menu icon.png" width="50px" height="50px" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<!--cart items details-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/Laptop ASUS.png">
+                    <div>
+                        <p>ASUS 8th Generation</p>
+                        <small>Price: R6500</small>
+                        <br>
+                        <a href="Account.html">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>R6500</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/Product-Hp.jpg">
+                    <div>
+                        <p>HP 8th Generation Laptop</p>
+                        <small>Price: R6400</small>
+                        <br>
+                        <a href="Account.html">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>R6400</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/laptop_PNG5905.png">
+                    <div>
+                        <p>Acer 8th Generation</p>
+                        <small>Price: R7000</small>
+                        <br>
+                        <a href="Account.html">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>R7000</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+
+         <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>R19900</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>R46</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>R19950</td>
+            </tr>
+         </table>      
+
+    </div>
+
+
+
+</div>
+
+<!--footer-->
+   <div class="footer">
+     <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="img/google-play-store-.png">
+                    <img src="img/798-7987288_scrape-popular-apps-from-apple-app-store-using.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/438-4384790_computer-icon-transparent-background.png"  width="100px">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                Benefits of Becoming the Aspiring Developer.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - BlueLockStore</p>
+     </div>
+   </div>
+<!--js for toggle menu-->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoogle(){
+        if(MenuItems.style.maxHeight == "0px")
+           {
+            MenuItems.style.maxHeight = "200px";
+           }
+           else
+           {
+            MenuItems.style.maxHeight = "0px";
+           }
+    }
+  </script>
+</body>
+</html>

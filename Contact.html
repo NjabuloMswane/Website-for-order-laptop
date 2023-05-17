@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact - BlueLockStore</title>
+    <link rel="icon" type="image" href="img/438-4384790_computer-icon-transparent-background.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/438-4384790_computer-icon-transparent-background.png"  width="100px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.htmlS">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="img/1074958-200.png" width="50px" height="50px"></a>
+            <img src="img/menu icon.png" width="50px" height="50px" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+</div>
+    <div class="containercontact">
+        <h1>Connect with Us</h1>
+        <p>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Msweli">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+27 73 673 0363">
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Msweli@BlueLockStore.ac.za">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Product Demo">
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                     
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@BlueLockStore.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+27 73 637 0363</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>South Africa, Durban, Durban South,<br>
+                        108 Maud Mfusi street
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!--footer-->
+   <div class="footer">
+     <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="img/google-play-store-.png">
+                    <img src="img/798-7987288_scrape-popular-apps-from-apple-app-store-using.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/438-4384790_computer-icon-transparent-background.png"  width="100px">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                Benefits of Becoming the Aspiring Developer.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - BlueLockStore</p>
+     </div>
+   </div>
+<!--js for toggle menu-->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoogle(){
+        if(MenuItems.style.maxHeight == "0px")
+           {
+            MenuItems.style.maxHeight = "200px";
+           }
+           else
+           {
+            MenuItems.style.maxHeight = "0px";
+           }
+    }
+  </script>
+</body>
+</html>
